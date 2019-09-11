@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ url_for('static', filename='jquery.js') }}">\x3C/script>')</script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	   <!-- Compiled and minified JavaScript -->
+	   <script src={{ url_for("static", filename='js/main.js') }}></script>
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	 <link rel="stylesheet" href={{ url_for("static", filename='css/materialize.css') }} /> 
+	 <link rel="stylesheet" href={{ url_for("static", filename='css/style.css') }} />
+	 <link rel="stylesheet" href={{ url_for("static", filename='css/animate.css') }} />      
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+	<title>nmap</title>
+</head>
+<body>
+<div class="row">
+	<div class="row s12">
+		{{ returned }}
+		<form>
+			<input id="input" type="text" name="input">
+			<input onclick="submit()" type="submit" class="btn  gradient-45deg-indigo-purple" value="submit"></input>
+		</form>
+		
+	</div>
+</div>
+</body>
+</html>
